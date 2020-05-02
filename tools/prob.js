@@ -8,9 +8,10 @@ function shuffle(array) {
     return shuffled;
 }
 
+const NUMBER_OF_CARDS_PER_INFLUENCE = 4;
 function buildDeck() {
     var deck = [];
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < NUMBER_OF_CARDS_PER_INFLUENCE; i++) {
         deck = deck.concat(['duke', 'captain', 'ambassador', 'assassin', 'contessa']);
     }
     return shuffle(deck);
