@@ -30,7 +30,7 @@ var EventEmitter = require('events').EventEmitter;
 var nextGameId = 1;
 
 var MIN_PLAYERS = 2;
-var MAX_PLAYERS = 6;
+var MAX_PLAYERS = 7;
 var INITIAL_CASH = 2;
 var INFLUENCES = 2;
 
