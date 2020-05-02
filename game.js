@@ -1183,9 +1183,10 @@ module.exports = function createGame(options) {
         return shuffled;
     }
 
+    const NUMBER_OF_CARDS_PER_INFLUENCE = 4;
     function buildDeck() {
         var deck = [];
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < NUMBER_OF_CARDS_PER_INFLUENCE; i++) {
             deck = deck.concat(state.roles);
         }
         return shuffle(deck);
